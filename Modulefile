@@ -6,3 +6,5 @@ license 'Apache License, Version 2.0'
 summary 'Configures MySQL for security hardening'
 description 'Configures MySQL for security hardening'
 project_page 'https://github.com/TelekomLabs/puppet-mysql-hardening'
+
+dependency 'hardening/hardening_stdlib', '>=1.0.0 <2.0.0'
