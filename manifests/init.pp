@@ -16,8 +16,14 @@ class mysql_hardening(
   $provider = 'none',
 ) {
   case $provider {
-    puppetlabs/mysql: { class{'mysql_hardening::puppetlabs': } }
-    none: { fail('You haven\'t configured a MySQL provider for hardening.') }
-    default: { fail('Unrecognized/Unsupported MySQL provider for hardening.') }
+    'puppetlabs/mysql': {
+      class{'mysql_hardening::puppetlabs': }
+    }
+    'none': {
+      fail('You haven\'t configured a MySQL provider for hardening.')
+    }
+    default: {
+      fail('Unrecognized/Unsupported MySQL provider for hardening.')
+    }
   }
 }
