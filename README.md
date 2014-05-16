@@ -12,15 +12,25 @@ This module provides hardening configuration for MySQL.
 
 ## Parameters
 
-...
+none
 
 ## Usage
 
-...
+If you use `puppetlabs/mysql`:
+
+    # Configure MySQL Server as you normally would:
+    class { 'mysql::server':
+      # ...
+    }
+
+    # now include hardening:
+    class { 'mysql_hardening':  provider => 'puppetlabs/mysql'}
+
 
 ## Contributors + Kudos
 
 ...
+
 
 ## License and Author
 
