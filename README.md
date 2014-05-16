@@ -7,7 +7,7 @@ This module provides hardening configuration for MySQL.
 ## Requirements
 
 * Puppet
-* Supported module: `puppetlabs/mysql`
+* Supported module: `puppetlabs/mysql` (v2.x.x)
 
 
 ## Parameters
