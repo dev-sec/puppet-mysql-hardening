@@ -10,7 +10,7 @@
   "dependencies": [
     {
       "name": "hardening/hardening_stdlib",
-      "version_requirement": ">=1.0.0 <2.0.0"
+      "version_requirement": ">=0.0.0 <1.0.0"
     }
   ],
   "types": [
