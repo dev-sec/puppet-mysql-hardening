@@ -7,4 +7,4 @@ summary 'Configures MySQL for security hardening'
 description 'Configures MySQL for security hardening'
 project_page 'https://github.com/TelekomLabs/puppet-mysql-hardening'
 
-dependency 'hardening/hardening_stdlib', '>=1.0.0 <2.0.0'
+dependency 'hardening/hardening_stdlib', '>=0.0.0 <1.0.0'
