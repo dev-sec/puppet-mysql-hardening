@@ -29,8 +29,8 @@ If you use `puppetlabs/mysql`:
 
 ## Contributors + Kudos
 
-...
-
+* Edmund Haselwanter [ehaselwanter](https://github.com/ehaselwanter)
+* Christoph Hartmann [chris-rock](https://github.com/chris-rock)
 
 ## License and Author
 
