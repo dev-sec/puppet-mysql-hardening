@@ -15,11 +15,5 @@
   ],
   "types": [
 
-  ],
-  "checksums": {
-    "Modulefile": "8573d19fcb9501c39b0c266f9aef921d",
-    "README.md": "520813d8004251d50c685cbd13818797",
-    "manifests/init.pp": "486ab4bcaa11b7e0c4914ee0b9b400c9",
-    "manifests/puppetlabs.pp": "4253a06c002b247ead6453b69d2e290f"
-  }
+  ]
 }
