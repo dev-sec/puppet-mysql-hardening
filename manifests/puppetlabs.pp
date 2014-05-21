@@ -25,7 +25,7 @@ class mysql_hardening::puppetlabs(
   }
 
   # get the override options the user specifies
-  $org_oo = getparam(Class['::mysql::server'], "override_options")
+  $org_oo = getparam(Class['::mysql::server'], 'override_options')
 
   # now lay hardening on top
   $new_options = merge_hardening( $org_oo, $hardening_oo )

@@ -1,3 +1,3 @@
-class { 'mysql_hardening': 
-  provider => "puppetlabs/mysql",
+class { 'mysql_hardening':
+  provider => 'puppetlabs/mysql',
 }
