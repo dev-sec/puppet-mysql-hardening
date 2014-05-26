@@ -5,11 +5,7 @@ driver:
 
 provisioner:
   name: puppet_apply
-  manifests_path: manifests
-  modules_path: modules
-  hiera_data_path: hieradata
-  manifest: site.pp
-  test_repo_uri: "https://github.com/TelekomLabs/tests-os-hardening.git"
+  test_repo_uri: "https://github.com/TelekomLabs/tests-mysql-hardening.git"
 
 platforms:
 - name: ubuntu-12.04
@@ -43,5 +39,7 @@ platforms:
     box_url: https://dl.dropboxusercontent.com/s/cd583cuf0mbcix7/debian-wheezy-64-chef.box
 
 suites:
-  - name: default
+- name: default
+  manifest: site.pp
+
 

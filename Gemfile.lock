@@ -1,9 +1,9 @@
 GIT
   remote: git://github.com/ehaselwanter/kitchen-puppet.git
-  revision: ba62c21d8efa623c3cff8cbe5120ea1720488cae
-  branch: repo_is_module
+  revision: dee74f3db28e11e3a41dc6839da6a19bf2fb59a0
+  branch: issue-14-enable-the-per-suite-manifest
   specs:
-    kitchen-puppet (0.0.9)
+    kitchen-puppet (0.0.10)
 
 GEM
   remote: https://rubygems.org/
