@@ -17,6 +17,6 @@ group :development, :test do
   gem 'guard-rake'
 end
 
-# group :openstack do
-#   gem 'kitchen-openstack'
-# end
+group :openstack do
+  gem 'kitchen-openstack'
+end
