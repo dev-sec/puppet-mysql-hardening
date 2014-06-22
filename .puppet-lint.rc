@@ -1,0 +1,3 @@
+--no-autoloader_layout-check
+--no-80chars-check
+--no-inherits_across_namespaces-check
