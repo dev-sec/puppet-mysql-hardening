@@ -1,3 +1,10 @@
+# === Copyright
+#
+# Copyright 2014, Deutsche Telekom AG
+# Licensed under the Apache License, Version 2.0 (the "License");
+# http://www.apache.org/licenses/LICENSE-2.0
+#
+
 # == Class: mysql_hardening::puppetlabs
 #
 # Overlay provider for puppetlabs/mysql
@@ -5,10 +12,6 @@
 # === Parameters
 #
 # none
-#
-# === Copyright
-#
-# Copyright 2014, Deutsche Telekom AG
 #
 class mysql_hardening::puppetlabs(
 ) {

@@ -1,3 +1,10 @@
+# === Copyright
+#
+# Copyright 2014, Deutsche Telekom AG
+# Licensed under the Apache License, Version 2.0 (the "License");
+# http://www.apache.org/licenses/LICENSE-2.0
+#
+
 # == Class: mysql_hardening
 #
 # Configures overlay hardening
@@ -7,10 +14,6 @@
 # [*mysql_provider*]
 #   The name of the provider you use to install MySQL.
 #   Supported: `puppetlabs/mysql`
-#
-# === Copyright
-#
-# Copyright 2014, Deutsche Telekom AG
 #
 class mysql_hardening(
   $provider = 'none',
