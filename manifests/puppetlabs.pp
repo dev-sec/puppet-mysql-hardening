@@ -17,13 +17,16 @@ class mysql_hardening::puppetlabs(
 ) {
   # hardening options
   $hardening_oo = {
+
     mysqld => {
       automatic_sp_privileges => '0',
       safe-user-create => '1',
+      skip-symbolic-links => '1',
       secure-auth => '1',
+      local-infile => '0',
       skip-show-database => true,
       secure-file-priv => '/tmp',
-      skip-symbolic-links => true,
+      allow-suspicious-udfs => '0'
     }
   }
 
@@ -33,6 +36,11 @@ class mysql_hardening::puppetlabs(
   # now lay hardening on top
   $new_options = merge_hardening( $org_oo, $hardening_oo )
 
+  class { '::mysql::server::account_security':
+      require => Anchor['mysql::server::end'],
+  }
+
   # finally we need to make sure our options are written to the config file
   class{'mysql_hardening::puppetlabs_override': }
+
 }
