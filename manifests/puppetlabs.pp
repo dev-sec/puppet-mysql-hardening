@@ -36,6 +36,11 @@ class mysql_hardening::puppetlabs(
   # now lay hardening on top
   $new_options = merge_hardening( $org_oo, $hardening_oo )
 
+  class { '::mysql::server::account_security':
+      require => Anchor['mysql::server::end'],
+  }
+
   # finally we need to make sure our options are written to the config file
   class{'mysql_hardening::puppetlabs_override': }
+
 }
