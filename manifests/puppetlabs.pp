@@ -17,13 +17,16 @@ class mysql_hardening::puppetlabs(
 ) {
   # hardening options
   $hardening_oo = {
+
     mysqld => {
       automatic_sp_privileges => '0',
       safe-user-create => '1',
+      skip-symbolic-links => '1',
       secure-auth => '1',
+      local-infile => '0',
       skip-show-database => true,
       secure-file-priv => '/tmp',
-      skip-symbolic-links => true,
+      allow-suspicious-udfs => '0'
     }
   }
 
