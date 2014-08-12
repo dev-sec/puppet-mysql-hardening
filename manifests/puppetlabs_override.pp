@@ -17,10 +17,14 @@ class mysql_hardening::puppetlabs_override inherits ::mysql::server::config {
   # merges the final set of options
   $options = mysql_deepmerge( $::mysql::server::options, $::mysql_hardening::puppetlabs::new_options )
   # write the new template
-  File[$mysql::server::config_file]{
+  if defined(File['mysql-config-file']) {
+    $mysql_config_filename = 'mysql-config-file'
+  } else {
+    $mysql_config_filename = $mysql::server::config_file
+  }
+
+  File[$mysql_config_filename]{
     content => template('mysql/my.cnf.erb'),
     mode   => '0640',
-    owner => 'mysql',
-    group => 'mysql',
   }
 }
