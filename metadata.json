@@ -1,19 +1,20 @@
 {
   "name": "hardening/mysql_hardening",
   "version": "1.0.0",
-  "source": "https://github.com/TelekomLabs/puppet-mysql-hardening",
   "author": "Dominik Richter",
-  "license": "Apache License, Version 2.0",
   "summary": "Configures MySQL for security hardening",
-  "description": "Configures MySQL for security hardening",
+  "license": "Apache License, Version 2.0",
+  "source": "https://github.com/TelekomLabs/puppet-mysql-hardening",
   "project_page": "https://github.com/TelekomLabs/puppet-mysql-hardening",
+  "issues_url": "https://github.com/TelekomLabs/puppet-mysql-hardening/issues",
+  "description": "Configures MySQL for security hardening",
+  "types": [
+
+  ],
   "dependencies": [
     {
       "name": "hardening/hardening_stdlib",
       "version_requirement": ">=0.0.0 <1.0.0"
     }
-  ],
-  "types": [
-
   ]
 }
