@@ -31,6 +31,8 @@ If you use `puppetlabs/mysql`:
 
 * Edmund Haselwanter [ehaselwanter](https://github.com/ehaselwanter)
 * Christoph Hartmann [chris-rock](https://github.com/chris-rock)
+* Matthew Haughton [3flex](https://github.com/3flex)
+* Patrick Meier [atomic111](https://github.com/atomic111)
 
 ## License and Author
 
