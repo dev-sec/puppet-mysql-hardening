@@ -1,4 +1,4 @@
-name    'hardening/mysql_hardening'
+name    'hardening-mysql_hardening'
 version '1.0.1'
 source 'https://github.com/TelekomLabs/puppet-mysql-hardening'
 author 'Dominik Richter'
