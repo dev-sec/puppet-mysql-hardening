@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.2
+
+* improvement: move to new test kitchen
+
 ## 1.0.1
 
 * improvement: dont overwrite ownership of `my.cnf`
