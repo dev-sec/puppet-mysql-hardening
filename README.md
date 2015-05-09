@@ -1,4 +1,4 @@
-# mysql_hardening (Puppet module)
+# Puppet MySQL hardening
 
 [![Puppet Forge](https://img.shields.io/puppetforge/dt/hardening/mysql_hardening.svg)][1]
 [![Build Status](http://img.shields.io/travis/hardening-io/puppet-mysql-hardening.svg)][2]
@@ -6,7 +6,7 @@
 
 ## Description
 
-This module provides hardening configuration for MySQL.
+This Puppet module provides hardening configuration for MySQL.
 
 ## Requirements
 
