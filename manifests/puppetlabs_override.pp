@@ -15,7 +15,7 @@
 #
 class mysql_hardening::puppetlabs_override inherits ::mysql::server::config {
   # merges the final set of options
-  $options = mysql_deepmerge( $::mysql::server::options, $::mysql_hardening::puppetlabs::new_options )
+  $options = mysql::deepmerge( $::mysql::server::options, $::mysql_hardening::puppetlabs::new_options )
   # write the new template
   if defined(File['mysql-config-file']) {
     $mysql_config_filename = 'mysql-config-file'
